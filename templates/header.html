@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title></title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"> -->
+  <!-- Load google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Montserrat" rel="stylesheet">
+  <!--Load normalize css-->
+  <link rel="stylesheet" href="/public/normalize.css">
+  <link rel="stylesheet" href="/public/styles.css">
+
+</head>
+
+<body>
+  <!-- Header with Top Navigation -->
+  <div class="menu" id="topmenu">
+    <img class="logo-img" src="/public/logo.png" ALT="LOGO" ALIGN=CENTER>
+    <nav>
+      <ul>
+        <li class="loggedIn"><a href="/">Home</a></li>
+        <li id="showmenu" class="loggedIn"><a href="/menu">Menu</a></li>
+        <li id="signup" style="float: right" class="loggedOut"><a href="/account/signup">Signup</a></li>
+        <li id="signin" style="float: right" class="loggedOut"><a href="/account/login">Login</a></li>
+        
+        <li class="loggedIn" id="signout" style="float: right;">
+          <a href="/">Logout</a>
+        </li>
+        <li class="loggedIn" id="profile" style="float: right;">
+          <a href="/profile"><i class="fa fa-user"></i></a>
+        </li>
+        <li id="mycart" style="float: right;" class="loggedIn"><a href="/cart">
+          <i class="fa fa-shopping-cart"><strong class="cart">0</strong></i>
+        </a>
+      </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- main body-->
+  <div class="main">
+    <div class="showexpired"></div>
+    <div class="content"></div>

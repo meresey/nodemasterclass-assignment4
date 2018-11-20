@@ -1,0 +1,406 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button:focus {outline:0;}
+
+/******************************* top navigation styles ********************************/
+.menu {
+  border-bottom: 1px solid #283243;
+  overflow: hidden;
+  padding-left: 100px;
+  background-color: #283243;
+}
+nav{
+  margin: 0;
+  overflow:hidden;
+  text-align: center;
+}
+
+nav > ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li{
+  float: left;
+  list-style-type: none;
+}
+
+nav > ul > li:hover{
+  opacity: 1;
+ }
+
+nav > ul > li > a{
+  color: white;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+nav ul li.loggedIn{
+  display: none;
+}
+
+body.loggedIn div.menu nav ul li.loggedIn{
+  display: inline-block;
+}
+
+body.loggedIn div.menu nav ul li.loggedOut{
+  display: none;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+  margin: 5px 10px 5px 0px;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.cart {
+  color: red;
+}
+
+/************************** display expired session message ***********************/
+.showexpired {
+  color: green;
+  font-weight: 700;
+  font-size: 2em;
+  display: block;
+  background-color: transparent;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/******************************* main body styles ********************************/
+div.main {
+  background-image: url("pizza2.jpg");
+  background-size: cover;
+  display: block;
+  background-repeat: no-repeat;
+  position:fixed;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  overflow-y:scroll;
+  padding-bottom: 50px;
+}
+
+
+/******************************* index page styles ********************************/
+div.index {
+  display: block;
+  height: 100%;
+  background-color: #283243;
+  border-color: 1px solid  #283243;
+  color: white;
+  margin: 10px auto auto 100px;
+  height: auto;
+  width: 300px;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.index {
+    margin: 10px auto auto auto;
+  }
+}
+
+div.index > h1 {
+  font-size: 3em;
+  font-style:oblique;
+  font-family: 'Bad Script', cursive;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+div.index > p {
+  font-family: 'Bad Script', cursive;
+  font-size: 1.4em;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+div.index > h2 {
+  font-size: 2em;
+  font-family: 'Bad Script', cursive;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+div.index > button {
+  font-size: 1.5em;
+  color: white;
+  background-color: transparent;
+  border: 1px solid  #aaa;
+  border-radius: 10px;
+  margin: 50px 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+div.index > button:hover {
+  background-color: #0194EF;
+  opacity: 1;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  size: 20px;
+}
+.social > span {
+  margin: 10px 10px;
+}
+.social > i {
+  cursor: pointer;
+}
+div.contact, div.copyright  {
+  margin: 14px 16px;
+}
+
+/******************************* Form page styles ********************************/
+/* Add padding to containers */
+.container {
+  display: block;
+  background-color: #283243;
+  border-color: 1px solid  #283243;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: auto;
+  height: auto;
+  overflow: auto; 
+  color: white; 
+}
+
+#menudiv {
+  max-width: 1000px;
+}
+
+div.profile {
+  width: 400px;
+}
+
+div.signup {
+  width: 400px;
+}
+
+div.login {
+  width: 400px;
+}
+
+div.checkout {
+  width: 400px;
+}
+
+div.edituser {
+  width: 400px;
+}
+
+div.table {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.pizza-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.container  > label{
+  color: white;
+  float: left;
+  text-align: left;
+}
+.edituser > label {
+  color: white;
+  float: left;
+  text-align: left;
+}
+
+.checkout > label {
+  color: white;
+  float: left;
+  text-align: left;
+}
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=checkbox]{
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=checkbox]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for the submit/register button */
+.registerbtn, .cancelbtn, .btncheckout, .deletebtn, .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+.deletebtn {
+  background-color: red;
+
+}
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.registerbtn:hover, .cancelbtn:hover, .deletebtn:hover {
+  opacity:0.5;
+}
+
+/* Add a blue text color to links */
+a {
+  color: red;
+}
+
+.container > h1,p {
+  color: white;
+}
+.formclear {
+  display: none;
+}
+.formerror {
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+}
+.formsuccess {
+  background-color: #4CAF50;
+  color: white;
+  display: block;
+  padding: 10px 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: left;
+  padding-top: 0px;
+  color: white;
+}
+
+
+/***************************** Table styles *********************************/
+th, td {
+  padding: 5px;
+}
+
+
+.btn-add-to-cart {
+  background-color: green;
+  color: white;
+  width: auto;
+  border: solid 1px green;
+  border-radius: 50px;
+  padding: 0 2px;
+  font-size: 1.5em;
+}
+
+.btn-remove-from-cart {
+  background-color:red;
+  color: white;
+  width: auto;
+  border: solid 1px red;
+  border-radius: 50px;
+  padding: 0 2px;
+  font-size: 1.5em;
+}
+
+.btn-add-to-cart:hover, .btn-remove-from-cart:hover {
+  opacity: 1;
+}
+
+.quantity {
+  width:50px;
+}
+
+.quantity > span {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.quantity > button {
+  width: 15px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.quantity > select {
+  background-color: transparent;
+  color: white;
+}
+
+#cartdiv {
+  max-width: 450px;
+  color: white;
+  width: auto;
+  height: auto;
+}
+
+div.shoppingcart {
+  display: flex;
+}
+
+div.labeltotalprice {
+  float: left;
+  width: 50%;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+
+div.totalprice {
+  float: right;
+  width: 50%;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  text-align: right;
+}
+
+/****************** checkout form ********************/
+
+div.checkout > label {
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+div.checkout > span.price {
+  float: right;
+  color: grey;
+}
+
