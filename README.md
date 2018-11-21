@@ -1,6 +1,6 @@
 # Node Masterclass - CLI Assignment
 
-Added capability of an administrator to to accomplish the following tasks through the CLI built into the project:
+Added capability of an administrator to accomplish the following tasks through the CLI built into the project:
 
 1. View all the current menu items
 
